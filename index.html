@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Мой сайт</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Training Diary — Privacy Notice</title>
+  <style>
+    :root{
+      --bg:#0f1115;
+      --card:#151922;
+      --text:#e8ecf1;
+      --muted:#a7b0be;
+      --accent:#7aa2ff;
+      --ok:#69d29b;
+      --warn:#ffd166;
+      --border:#232938;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;margin:0}
+    .wrap{max-width:900px;margin:48px auto;padding:0 20px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px}
+    h1,h2,h3{line-height:1.25;margin:0 0 14px}
+    h1{font-size:2rem;letter-spacing:.2px}
+    h2{font-size:1.25rem;color:var(--accent);margin-top:28px}
+    p{margin:0 0 12px}
+    ul{margin:10px 0 16px 1.2rem}
+    li{margin:8px 0}
+    code, .kbd{background:#0b0e14;border:1px solid var(--border);border-radius:8px;padding:.1rem .4rem;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+    .badge{display:inline-block;font-size:.85rem;padding:.2rem .55rem;border-radius:999px;border:1px solid var(--border);background:rgba(122,162,255,.08);color:var(--accent);margin-left:.4rem}
+    .note{font-size:.95rem;color:var(--muted)}
+    .pill{display:inline-block;border:1px solid var(--border);border-radius:10px;padding:.35rem .6rem;background:rgba(255,255,255,.03);margin:.2rem .2rem 0 0}
+    .ok{color:var(--ok)}
+    .divider{height:1px;background:var(--border);margin:22px 0}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    footer{color:var(--muted);font-size:.95rem;margin-top:22px}
+  </style>
 </head>
 <body>
-    <h1>Политика конфиденциальности Training Diary</h1>
-    <p>Приложение Training Diary не собирает ваши персональные данные</p>
+  <main class="wrap">
+    <article class="card" role="article" aria-label="Privacy Notice">
+      <header>
+        <h1>Privacy Notice <span class="badge">Training Diary</span></h1>
+        <p class="note">Last updated: September 2, 2025</p>
+      </header>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Training Diary respects your privacy. This app <strong>does not collect, store, or share any personal data</strong>. 
+          It runs locally on your device and uses system permissions only to provide core functionality such as reminders.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="data-collection">
+        <h2 id="data-collection">Data Collection & Sharing</h2>
+        <ul>
+          <li><strong>No personal data collection:</strong> Training Diary does not gather names, emails, health data, location, or any other personal identifiers.</li>
+          <li><strong>No analytics or ads:</strong> The app does not include advertising SDKs or analytics tracking.</li>
+          <li><strong>No third-party sharing:</strong> No data is transmitted to the developer or third parties.</li>
+        </ul>
+        <p class="ok">Result: No user profiles, tracking, or cross-app data sharing.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="permissions">
+        <h2 id="permissions">Permissions Used & Why</h2>
+        <p class="note">Training Diary requests only the permissions required for timely training reminders.</p>
+
+        <div class="pill"><code>android.permission.POST_NOTIFICATIONS</code></div>
+        <p><em>Purpose:</em> To send you notifications about upcoming training sessions that you schedule in the app.</p>
+        <p class="note">Notifications can be controlled or disabled at any time in your system settings.</p>
+
+        <div class="pill"><code>android.permission.RECEIVE_BOOT_COMPLETED</code></div>
+        <p><em>Purpose:</em> To automatically restore your reminder alarms after the device restarts, ensuring your scheduled training alerts continue to work.</p>
+        <p class="note">No personal data is accessed or transmitted during device boot; the app only re-schedules previously set alarms.</p>
+
+        <div class="pill"><code>android.permission.SCHEDULE_EXACT_ALARM</code></div>
+        <p><em>Purpose:</em> To schedule precise reminders for your upcoming training sessions so alerts fire at the exact time you expect.</p>
+        <p class="note">Exact alarms are used strictly for user-initiated reminders.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="children">
+        <h2 id="children">Children’s Privacy</h2>
+        <p>
+          Training Diary is not directed to children and does not knowingly collect information from anyone, including children.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="security">
+        <h2 id="security">Security</h2>
+        <p>
+          Because the app does not collect or store personal data, there are no user databases or cloud endpoints involved. 
+          Standard platform safeguards for notifications and alarms apply.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">Changes to This Notice</h2>
+        <p>
+          If the app’s functionality changes in a way that affects privacy or permissions, this notice will be updated accordingly.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <footer>
+        <p>&copy; 2025 Training Diary. All rights reserved.</p>
+      </footer>
+    </article>
+  </main>
 </body>
 </html>
