@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>R
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Trainer Diary Privacy Notice"
+  />
+  <title>Trainer Diary — Privacy Notice</title>
+
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #151922;
+      --text: #e8ecf1;
+      --muted: #a7b0be;
+      --accent: #7aa2ff;
+      --ok: #69d29b;
+      --border: #232938;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--bg);
+      color-scheme: dark;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .card {
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 36px;
+    }
+
+    header {
+      margin-bottom: 8px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+      margin: 0 0 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.65rem, 4vw, 2.1rem);
+      letter-spacing: .2px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: clamp(1.15rem, 3vw, 1.3rem);
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 16px;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    code {
+      display: inline;
+      background: #0b0e14;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: .1rem .4rem;
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+      font-size: .9em;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .badge {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: .78rem;
+      font-weight: 500;
+      padding: .2rem .55rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(122, 162, 255, .08);
+      color: var(--accent);
+      margin-left: .35rem;
+      white-space: nowrap;
+    }
+
+    .note {
+      font-size: .95rem;
+      color: var(--muted);
+    }
+
+    .permission {
+      margin: 18px 0 22px;
+    }
+
+    .permission-name {
+      margin-bottom: 8px;
+    }
+
+    .pill {
+      display: block;
+      width: 100%;
+      margin: 0 0 10px;
+    }
+
+    .pill code {
+      display: block;
+      width: 100%;
+      padding: .65rem .75rem;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .ok {
+      color: var(--ok);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 26px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: .95rem;
+      margin-top: 22px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        font-size: 15px;
+      }
+
+      .wrap {
+        padding: 20px 12px;
+      }
+
+      .card {
+        padding: 24px 20px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        margin-top: 24px;
+      }
+
+      .divider {
+        margin: 22px 0;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .wrap {
+        padding: 0;
+      }
+
+      .card {
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 24px 16px;
+      }
+
+      h1 {
+        line-height: 1.2;
+      }
+
+      .badge {
+        display: table;
+        margin: 8px 0 0;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      .permission-name code {
+        font-size: .82em;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .wrap {
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrap">
+    <article class="card" role="article" aria-label="Privacy Notice">
+
+      <header>
+        <h1>
+          Privacy Notice
+          <span class="badge">Trainer Diary</span>
+        </h1>
+        <p class="note">Last updated: August 20, 2026</p>
+      </header>
+
+      <section aria-labelledby="overview">
+        <h2 id="overview">Overview</h2>
+
+        <p>
+          Trainer Diary respects your privacy. The app is designed to
+          keep your information on your device and does not collect or
+          transmit your personal or health data to the developer or
+          third parties.
+        </p>
+
+        <p>
+          Trainer Diary may access certain health information through
+          Android Health Connect when you grant the corresponding
+          permissions. This information is used only to provide
+          health-related features within the app.
+        </p>
+
+        <p>
+          <strong>
+            The app does not upload or share this health information.
+            Information obtained from Health Connect is stored and
+            processed locally on your device.
+          </strong>
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="data-collection">
+        <h2 id="data-collection">Data Collection &amp; Sharing</h2>
+
+        <ul>
+          <li>
+            <strong>No personal data collection:</strong>
+            Trainer Diary does not send names, emails, location,
+            health information, or other personal identifiers to the
+            developer or any third party.
+          </li>
+
+          <li>
+            <strong>Health data:</strong>
+            When you grant Health Connect permissions, the app may read
+            the health information necessary for its features. This
+            information is processed and stored locally on your device.
+          </li>
+
+          <li>
+            <strong>No analytics or ads:</strong>
+            The app does not include advertising SDKs or analytics
+            tracking.
+          </li>
+
+          <li>
+            <strong>No third-party sharing:</strong>
+            Your information is not transmitted to the developer,
+            advertising networks, analytics services, or other third
+            parties.
+          </li>
+
+          <li>
+            <strong>Local storage:</strong>
+            Information created or obtained by the app remains on your
+            device and is not uploaded to an external server.
+          </li>
+        </ul>
+
+        <p class="ok">
+          Result: Your information stays on your device and is not
+          collected for advertising, analytics, profiling, or sharing
+          with third parties.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="permissions">
+        <h2 id="permissions">Permissions Used &amp; Why</h2>
+
+        <p class="note">
+          Trainer Diary requests only the permissions required for
+          its features.
+        </p>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.POST_NOTIFICATIONS</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Purpose:</em>
+            To send notifications about upcoming training sessions
+            that you schedule in the app.
+          </p>
+
+          <p class="note">
+            Notifications can be controlled or disabled at any time
+            in your Android system settings.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.RECEIVE_BOOT_COMPLETED</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Purpose:</em>
+            To automatically restore your reminder alarms after the
+            device restarts, ensuring that your scheduled training
+            alerts continue to work.
+          </p>
+
+          <p class="note">
+            No personal or health data is accessed or transmitted
+            during device startup. The app only restores previously
+            configured reminders.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.SCHEDULE_EXACT_ALARM</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Purpose:</em>
+            To schedule precise reminders for upcoming training
+            sessions so that notifications are delivered at the time
+            selected by you.
+          </p>
+
+          <p class="note">
+            Exact alarms are used only for user-initiated training
+            reminders.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.health.READ_TOTAL_CALORIES_BURNED</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Purpose:</em>
+            To read the total calories burned recorded in Android
+            Health Connect. Trainer Diary uses this information to
+            display and calculate relevant training and activity
+            information within the app.
+          </p>
+
+          <p class="note">
+            This permission allows the app to read the corresponding
+            health information from Health Connect. The information
+            is not transmitted to the developer or any third party
+            and remains on your device.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.health.READ_ACTIVE_CALORIES_BURNED</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Purpose:</em>
+            To read active calories burned recorded in Android Health
+            Connect. Trainer Diary uses this information for features
+            related to physical activity and training.
+          </p>
+
+          <p class="note">
+            The app reads this information only after you grant the
+            permission. It is processed locally and is not uploaded,
+            sold, or shared with the developer or third parties.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.ACTIVITY_RECOGNITION</code>
+            </div>
+          </div>
+          
+          <p>
+            <em>Purpose:</em>
+            To detect physical activity and count your steps. Trainer Diary
+            uses this permission to provide step-counting and activity-related
+            features within the app.
+          </p>
+          
+          <p class="note">
+            Activity recognition information is processed and stored locally on
+            your device. It is not transmitted to the developer, uploaded to
+            external servers, sold, or shared with third parties.
+          </p>
+        </div>
+
+        <p>
+          <strong>Health information privacy:</strong>
+          Trainer Diary does not collect health data on external
+          servers. Health information obtained through Health Connect,
+          including calorie data, is stored and processed locally on
+          the user's device.
+        </p>
+
+        <p class="note">
+          You can manage or revoke Health Connect permissions at any
+          time through Android system settings or Health Connect.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="children">
+        <h2 id="children">Children's Privacy</h2>
+
+        <p>
+          Trainer Diary is not directed to children and does not
+          knowingly collect or transmit information from anyone,
+          including children.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="security">
+        <h2 id="security">Security</h2>
+
+        <p>
+          Trainer Diary stores user-created information such as
+          <strong>
+            name, date of birth, gender, and training records
+          </strong>
+          locally on the device in a private database.
+        </p>
+
+        <p>
+          Health information obtained through Android Health Connect
+          is also processed locally. The app does not transmit this
+          information to the developer or third parties.
+        </p>
+
+        <p>
+          These records and health-related information
+          <strong>do not leave your device through Trainer Diary</strong>.
+        </p>
+
+        <p>
+          Access to this information is protected by the security
+          features of the Android operating system. Users can manage
+          the app's permissions and Health Connect access directly in
+          system settings.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">Changes to This Notice</h2>
+
+        <p>
+          If the app's functionality changes in a way that affects
+          privacy, data handling, or permissions, this notice will be
+          updated accordingly.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <footer>
+        <p>&copy; 2026 Trainer Diary. All rights reserved.</p>
+      </footer>
+
+    </article>
+  </main>
+
+</body>
+
+</html>
