@@ -50,8 +50,8 @@ kbd { min-width: 24px; padding: 2px 6px; border: 1px solid #454150; border-radiu
 .section-kicker { color: #827d99; margin-bottom: 8px; }
 .section-heading h2 { margin: 0; font-size: 24px; font-weight: 750; }
 .section-count { color: var(--subtle); font-size: 12px; padding-bottom: 4px; }
-.category-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.category-card { display: flex; align-items: flex-start; gap: 19px; min-height: 184px; padding: 25px 24px; background: linear-gradient(135deg, #1c1c25, #17171e); border: 1px solid var(--border); border-radius: 16px; transition: transform .2s, border-color .2s, background .2s; }
+.category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.category-card { display: flex; align-items: flex-start; gap: 15px; min-height: 184px; padding: 23px 19px; background: linear-gradient(135deg, #1c1c25, #17171e); border: 1px solid var(--border); border-radius: 16px; transition: transform .2s, border-color .2s, background .2s; }
 .category-card:hover { transform: translateY(-3px); border-color: #555067; background: #20202a; }
 .card-icon { width: 44px; height: 44px; display: grid; place-items: center; flex-shrink: 0; border-radius: 13px; }
 .card-icon.purple { background: #9b8cff18; color: #a99aff; }
@@ -72,8 +72,7 @@ kbd { min-width: 24px; padding: 2px 6px; border: 1px solid #454150; border-radiu
 .article-info strong { font-size: 13px; font-weight: 600; }
 .article-info small { color: var(--subtle); font-size: 12px; }
 .article-arrow { color: #7e798e; font-size: 17px; padding-right: 7px; }
-.search-results { position: fixed; z-index: 1000; margin: 0; padding: 7px; overflow-y: auto; overscroll-behavior: contain; text-align: left; border: 1px solid #3a3747; border-radius: 12px; background: #1a1922; box-shadow: 0 18px 45px #0007; }
-.search-results[hidden] { display: none; }
+.search-results { position: relative; z-index: 5; margin-top: 8px; padding: 7px; text-align: left; border: 1px solid #3a3747; border-radius: 12px; background: #1a1922; box-shadow: 0 18px 45px #0007; }
 .search-result { display: block; padding: 11px 12px; border-radius: 8px; }
 .search-result:hover { background: #ffffff0a; }
 .search-result strong { display: block; font-size: 13px; }
@@ -150,3 +149,25 @@ kbd { min-width: 24px; padding: 2px 6px; border: 1px solid #454150; border-radiu
 .article-body-copy { color: #b6b3c3; font-size: 14px; line-height: 1.85; margin: -3px 0 22px; }
 .article-subheading { margin-top: 39px; }
 .steps-list { margin-bottom: 34px; }
+
+/* Articles and collection-style navigation */
+.collection-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 10px 0 50px; }
+.collection-card { display: flex; gap: 16px; align-items: flex-start; padding: 23px; border: 1px solid var(--border); border-radius: 15px; background: linear-gradient(135deg, #1c1c25, #17171e); transition: border-color .2s, transform .2s, background .2s; }
+.collection-card:hover { transform: translateY(-2px); border-color: #555067; background: #20202a; }
+.collection-card .card-icon { flex-shrink: 0; }
+.collection-card h2 { font-size: 17px; margin: 1px 0 7px; }
+.collection-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.article-content h2 { margin-top: 35px; }
+.article-content h3 { font-size: 16px; margin: 25px 0 9px; }
+.article-content p, .article-content li { color: #b6b3c3; font-size: 14px; line-height: 1.85; }
+.article-content ul, .article-content ol { padding-left: 23px; margin: 8px 0 22px; }
+.article-content li { padding-left: 3px; margin: 6px 0; }
+.article-content strong { color: var(--text); }
+.field-list { border-top: 1px solid var(--border); margin: 10px 0 25px; }
+.field-row { display: grid; grid-template-columns: minmax(130px, 190px) minmax(0, 1fr); gap: 20px; padding: 15px 0; border-bottom: 1px solid var(--border); }
+.field-row strong { font-size: 13px; }
+.field-row p { margin: 0; color: var(--muted); font-size: 13px; }
+.article-callout { padding: 17px 19px; border: 1px solid #373342; border-radius: 12px; background: #1a1922; margin: 23px 0; }
+.article-callout p:last-child { margin-bottom: 0; }
+@media (max-width: 900px) { .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .category-grid, .collection-cards { grid-template-columns: 1fr; } .field-row { grid-template-columns: 1fr; gap: 4px; } }
