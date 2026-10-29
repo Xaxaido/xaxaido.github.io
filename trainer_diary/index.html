@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111116">
+  <meta name="description" content="Справочный центр Trainer Diary">
+  <title>Справка — Trainer Diary</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Trainer Diary — главная">
+      <span class="brand-mark">TD</span>
+      <span>Trainer Diary <span class="brand-muted">/ Справка</span></span>
+    </a>
+    <a class="top-link" href="./">Главная</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> ЦЕНТР ПОДДЕРЖКИ</div>
+        <h1>Чем можем помочь?</h1>
+        <p class="hero-subtitle">Руководства и ответы на вопросы о Trainer Diary.</p>
+        <label class="search-wrap" for="help-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="help-search" type="search" placeholder="Поиск по справке…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div id="search-results" class="search-results" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">НАВИГАЦИЯ</div>
+          <h2>Разделы справки</h2>
+        </div>
+        <span class="section-count">2 раздела</span>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="articles/training.html" data-searchable="тренировка проведение упражнения подходы вес повторения результаты">
+          <div class="card-icon purple">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M3 8v8M18 5v14m3-11v8M6 12h12"></path></svg>
+          </div>
+          <div class="card-copy">
+            <h3>Тренировка <span class="arrow">↗</span></h3>
+            <p>Материалы о проведении тренировки и работе с упражнениями.</p>
+            <span class="card-meta">Открыть раздел <span>→</span></span>
+          </div>
+        </a>
+        <a class="category-card" href="articles/training-template.html" data-searchable="шаблон тренировки создание редактирование упражнения план">
+          <div class="card-icon blue">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="2"></rect><path d="M9 8h6M9 12h6M9 16h3"></path></svg>
+          </div>
+          <div class="card-copy">
+            <h3>Шаблон тренировки <span class="arrow">↗</span></h3>
+            <p>Материалы о создании и использовании шаблонов тренировок.</p>
+            <span class="card-meta">Открыть раздел <span>→</span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">БЫСТРЫЙ ДОСТУП</div>
+          <h2>Популярные материалы</h2>
+        </div>
+      </div>
+      <div class="article-list">
+        <a href="articles/training.html" class="article-row" data-searchable="тренировка начало проведение упражнения">
+          <span class="article-symbol">01</span>
+          <span class="article-info"><strong>Тренировка</strong><small>Основные сведения о тренировке</small></span>
+          <span class="article-arrow">↗</span>
+        </a>
+        <a href="articles/training-template.html" class="article-row" data-searchable="шаблон тренировки создание план">
+          <span class="article-symbol">02</span>
+          <span class="article-info"><strong>Шаблон тренировки</strong><small>Создание и использование шаблонов</small></span>
+          <span class="article-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-brand" href="./"><span class="brand-mark small">TD</span> Trainer Diary</a>
+    <span>Справочный центр</span>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
