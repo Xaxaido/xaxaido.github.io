@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Политика конфиденциальности Trainer Diary"
+  />
+  <title>Trainer Diary — Политика конфиденциальности</title>
+
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #151922;
+      --text: #e8ecf1;
+      --muted: #a7b0be;
+      --accent: #7aa2ff;
+      --ok: #69d29b;
+      --border: #232938;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--bg);
+      color-scheme: dark;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .card {
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 36px;
+    }
+
+    header {
+      margin-bottom: 8px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+      margin: 0 0 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.65rem, 4vw, 2.1rem);
+      letter-spacing: .2px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: clamp(1.15rem, 3vw, 1.3rem);
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 10px 0 16px;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    code {
+      display: inline;
+      background: #0b0e14;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: .1rem .4rem;
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
+      font-size: .9em;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .badge {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: .78rem;
+      font-weight: 500;
+      padding: .2rem .55rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(122, 162, 255, .08);
+      color: var(--accent);
+      margin-left: .35rem;
+      white-space: nowrap;
+    }
+
+    .note {
+      font-size: .95rem;
+      color: var(--muted);
+    }
+
+    .permission {
+      margin: 18px 0 22px;
+    }
+
+    .permission-name {
+      margin-bottom: 8px;
+    }
+
+    .pill {
+      display: block;
+      width: 100%;
+      margin: 0 0 10px;
+    }
+
+    .pill code {
+      display: block;
+      width: 100%;
+      padding: .65rem .75rem;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .ok {
+      color: var(--ok);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 26px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: .95rem;
+      margin-top: 22px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        font-size: 15px;
+      }
+
+      .wrap {
+        padding: 20px 12px;
+      }
+
+      .card {
+        padding: 24px 20px;
+        border-radius: 12px;
+      }
+
+      h2 {
+        margin-top: 24px;
+      }
+
+      .divider {
+        margin: 22px 0;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .wrap {
+        padding: 0;
+      }
+
+      .card {
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 24px 16px;
+      }
+
+      h1 {
+        line-height: 1.2;
+      }
+
+      .badge {
+        display: table;
+        margin: 8px 0 0;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      .permission-name code {
+        font-size: .82em;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .wrap {
+        padding-top: 64px;
+        padding-bottom: 64px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrap">
+    <article class="card" role="article" aria-label="Политика конфиденциальности">
+
+      <header>
+        <h1>
+          Политика конфиденциальности
+          <span class="badge">Trainer Diary</span>
+        </h1>
+        <p class="note">Последнее обновление: 20 августа 2026 года</p>
+      </header>
+
+      <section aria-labelledby="overview">
+        <h2 id="overview">Общие положения</h2>
+
+        <p>
+          Trainer Diary уважает вашу конфиденциальность. Приложение разработано
+          таким образом, чтобы ваша информация оставалась на устройстве. Оно не
+          собирает и не передаёт разработчику или третьим лицам ваши персональные
+          данные и данные о состоянии здоровья.
+        </p>
+
+        <p>
+          Trainer Diary может получать доступ к определённой информации о состоянии
+          здоровья через Android Health Connect, если вы предоставите соответствующие
+          разрешения. Эта информация используется исключительно для работы функций
+          приложения, связанных со здоровьем.
+        </p>
+
+        <p>
+          <strong>
+            Приложение не загружает и не передаёт эту информацию о состоянии здоровья.
+            Данные, полученные через Health Connect, хранятся и обрабатываются
+            локально на вашем устройстве.
+          </strong>
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="data-collection">
+        <h2 id="data-collection">Сбор и передача данных</h2>
+
+        <ul>
+          <li>
+            <strong>Отсутствие сбора персональных данных:</strong>
+            Trainer Diary не передаёт разработчику или третьим лицам имена,
+            адреса электронной почты, данные о местоположении, информацию о
+            состоянии здоровья и другие персональные идентификаторы.
+          </li>
+
+          <li>
+            <strong>Данные о состоянии здоровья:</strong>
+            после предоставления разрешений Health Connect приложение может
+            считывать информацию о здоровье, необходимую для его функций.
+            Эта информация обрабатывается и хранится локально на вашем устройстве.
+          </li>
+
+          <li>
+            <strong>Отсутствие аналитики и рекламы:</strong>
+            приложение не содержит рекламных SDK и средств отслеживания аналитики.
+          </li>
+
+          <li>
+            <strong>Отсутствие передачи данных третьим лицам:</strong>
+            ваша информация не передаётся разработчику, рекламным сетям,
+            аналитическим сервисам или другим третьим лицам.
+          </li>
+
+          <li>
+            <strong>Локальное хранение:</strong>
+            информация, созданная или полученная приложением, остаётся на вашем
+            устройстве и не загружается на внешние серверы.
+          </li>
+        </ul>
+
+        <p class="ok">
+          Таким образом, ваша информация остаётся на устройстве и не собирается
+          для рекламы, аналитики, профилирования или передачи третьим лицам.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="permissions">
+        <h2 id="permissions">Используемые разрешения и их назначение</h2>
+
+        <p class="note">
+          Trainer Diary запрашивает только те разрешения, которые необходимы
+          для работы его функций.
+        </p>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.POST_NOTIFICATIONS</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Назначение:</em>
+            отправка уведомлений о предстоящих тренировках, которые вы запланировали
+            в приложении.
+          </p>
+
+          <p class="note">
+            Вы можете управлять уведомлениями или отключить их в любое время
+            в системных настройках Android.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.RECEIVE_BOOT_COMPLETED</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Назначение:</em>
+            автоматическое восстановление напоминаний после перезапуска устройства,
+            чтобы запланированные уведомления о тренировках продолжали работать.
+          </p>
+
+          <p class="note">
+            Во время запуска устройства приложение не получает доступ к персональным
+            данным или данным о здоровье и не передаёт их. Оно только восстанавливает
+            ранее настроенные напоминания.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.SCHEDULE_EXACT_ALARM</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Назначение:</em>
+            планирование точных напоминаний о предстоящих тренировках, чтобы
+            уведомления приходили в выбранное вами время.
+          </p>
+
+          <p class="note">
+            Точные будильники используются только для напоминаний о тренировках,
+            настроенных пользователем.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.health.READ_TOTAL_CALORIES_BURNED</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Назначение:</em>
+            чтение данных об общем количестве сожжённых калорий, записанных в
+            Android Health Connect. Trainer Diary использует эту информацию для
+            отображения и расчёта соответствующих показателей тренировок и активности.
+          </p>
+
+          <p class="note">
+            Это разрешение позволяет приложению читать соответствующие данные
+            о здоровье из Health Connect. Информация не передаётся разработчику
+            или третьим лицам и остаётся на вашем устройстве.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.health.READ_ACTIVE_CALORIES_BURNED</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Назначение:</em>
+            чтение данных об активных калориях, сожжённых за счёт физической
+            активности и записанных в Android Health Connect. Trainer Diary
+            использует эту информацию для функций, связанных с физической
+            активностью и тренировками.
+          </p>
+
+          <p class="note">
+            Приложение читает эти данные только после предоставления вами разрешения.
+            Информация обрабатывается локально, не загружается на внешние серверы,
+            не продаётся и не передаётся разработчику или третьим лицам.
+          </p>
+        </div>
+
+        <div class="permission">
+          <div class="permission-name">
+            <div class="pill">
+              <code>android.permission.ACTIVITY_RECOGNITION</code>
+            </div>
+          </div>
+
+          <p>
+            <em>Назначение:</em>
+            распознавание физической активности и подсчёт шагов. Trainer Diary
+            использует это разрешение для работы счётчика шагов и других функций,
+            связанных с активностью.
+          </p>
+
+          <p class="note">
+            Данные о физической активности обрабатываются и хранятся локально
+            на вашем устройстве. Они не передаются разработчику, не загружаются
+            на внешние серверы, не продаются и не передаются третьим лицам.
+          </p>
+        </div>
+
+        <p>
+          <strong>Конфиденциальность данных о здоровье:</strong>
+          Trainer Diary не собирает данные о здоровье на внешних серверах.
+          Информация, полученная через Android Health Connect, включая данные
+          о калориях, хранится и обрабатывается локально на устройстве пользователя.
+        </p>
+
+        <p class="note">
+          Вы можете управлять разрешениями Health Connect или отзывать их в любое
+          время через системные настройки Android или приложение Health Connect.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="children">
+        <h2 id="children">Конфиденциальность детей</h2>
+
+        <p>
+          Trainer Diary не предназначено для детей и не собирает и не передаёт
+          намеренно информацию о ком-либо, включая детей.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="security">
+        <h2 id="security">Безопасность</h2>
+
+        <p>
+          Trainer Diary хранит созданную пользователем информацию, например
+          <strong>имя, дату рождения, пол и записи о тренировках</strong>,
+          локально на устройстве в закрытой базе данных.
+        </p>
+
+        <p>
+          Информация о здоровье, полученная через Android Health Connect,
+          также обрабатывается локально. Приложение не передаёт эти данные
+          разработчику или третьим лицам.
+        </p>
+
+        <p>
+          Эти записи и информация о здоровье
+          <strong>не покидают ваше устройство через Trainer Diary</strong>.
+        </p>
+
+        <p>
+          Доступ к этой информации защищён средствами безопасности операционной
+          системы Android. Пользователи могут управлять разрешениями приложения
+          и доступом к Health Connect непосредственно в системных настройках.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section aria-labelledby="changes">
+        <h2 id="changes">Изменения политики конфиденциальности</h2>
+
+        <p>
+          Если функциональность приложения изменится таким образом, что это
+          повлияет на конфиденциальность, обработку данных или разрешения,
+          настоящая политика будет соответствующим образом обновлена.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <footer>
+        <p>&copy; 2026 Trainer Diary. Все права защищены.</p>
+      </footer>
+
+    </article>
+  </main>
+
+</body>
+
+</html>
